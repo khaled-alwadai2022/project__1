@@ -42,6 +42,13 @@ abstract class Books {
       "Price": 39.9,
       "Quantity": 0
     },
+
+     {
+    "ID" : "ID",
+    "Name": "Book Title", 
+    "Author": "Author",
+    "Price": "Price", 
+    "Quantity": "Quantity"},
   ];
 
   addBook();

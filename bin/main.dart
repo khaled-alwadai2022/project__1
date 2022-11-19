@@ -1,13 +1,18 @@
+import 'Book/add_book.dart';
+import 'Book/delete_book.dart';
+import 'Book/edit_book.dart';
+import 'Book/selling_book.dart';
 import 'Book/serch.dart';
 import 'Book/view_book.dart';
-import 'packages.dart';
+import 'packages.dart' show exit, stdin, stdout;
+import 'dart:io'; 
 
 main(){
   EditBookInfo editInfo = EditBookInfo();
   ViewBookinfoe viewInfo = ViewBookinfoe();
   SellingBooks sellBook = SellingBooks();
-  // AddBook add = AddBook();
-  // AddBook ab = AddBook();
+   AddBook add = AddBook();
+   AddBook ab = AddBook();
   DeleteBook deleteBook = DeleteBook();
 
 
@@ -31,7 +36,7 @@ main(){
 
     case 2:{
       print("Add Book:");
-      // add.addBook();
+      add.addBook();
       // add.viewBookInformation();
 
     } break;
@@ -74,13 +79,16 @@ main(){
                   searchByAuthor.SerchByAuthor();
                 }
                 break;
-             
+              default:
+                {
+                
+                }
             }
           }
         }
 
 
-}
+    break;}
 
     case 6: {
       print("Book For Sell:");
